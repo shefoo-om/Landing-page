@@ -1,0 +1,33 @@
+import React from "react";
+import "../all.css";
+import { Link } from "react-scroll";
+
+function HomePage() {
+  const handleButtonClick = () => {
+    window.scrollTo({
+      top: document.getElementById("services").offsetTop,
+      behavior: "smooth"
+    });
+  };
+  return (
+    <div className="HomePage pt-5 pb-5 text-center" id="home" >
+      <div className="overlay">
+        <div className="container">
+          <div className="row content text-center d-flex justify-content-center  ">
+            <div className="d-flex flex-column justify-content-center align-items-center flex-wrap" >
+              <h3 className="welcome-text">Welcome To  <br /> <span className="title">GO</span><br /> Academy</h3>
+              <p className="mt-3 fs-4 description" >The best Academy to learn progamming</p>
+            </div>
+            <div className=" mt-4 mb-5 ">
+              <Link to="services" smooth={true} duration={10}>
+                <button type="button" className="btn btn-outline-primary fs-4 fw-md-bold w-auto" onClick={handleButtonClick}>Explore Our Services</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div >
+  );
+}
+
+export default HomePage;

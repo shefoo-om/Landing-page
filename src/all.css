@@ -1,0 +1,325 @@
+/* # */
+body {
+  font-family: "Tajawal", sans-serif;
+  behavior: "smooth";
+}
+
+/* roots */
+:root {
+  --main-color: #0d6efd;
+}
+
+/* const */
+
+.The-title h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  color: #0d6efd;
+  text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+.The-title h2:hover {
+  transform: scale(1.13);
+}
+
+/* cards */
+.service-cards,
+.plans-cards,
+.team-cards,
+.stats-cards,
+.whyus-cards {
+  overflow: hidden;
+  border-radius: 30px !important;
+  border-color: transparent;
+  box-shadow: rgb(212, 212, 212) 28px 28px 45px,
+    rgb(255, 255, 255) -28px -28px 45px;
+  transition: all 0.3s ease 0s;
+}
+.service-cards:hover,
+.plans-cards:hover,
+.team-cards:hover,
+.whyus-cards:hover {
+  transform: scale(1.03);
+}
+
+/* navbar */
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar {
+  /* #003f6b */
+  background-color: #f3f3f5;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* HOmePage */
+.HomePage {
+  background-position: center;
+  height: calc(100vh - 60px);
+  background-image: url("./imgs/pexels-instawalli-176851.jpg");
+  background-size: cover;
+  position: relative;
+}
+.HomePage .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.welcome-text {
+  color: rgb(255 255 255 / 84%);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.description {
+  color: rgb(255 255 255 / 84%);
+}
+.welcome-text .title {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 70px;
+}
+
+/* services */
+.services,
+.team,
+.whyus {
+  background-color: #f3f3f5;
+}
+
+.service-img {
+  height: 175px;
+  border-radius: 30%;
+}
+.service-title {
+  transition: all 0.3s ease 0s;
+}
+.service-cards:hover .service-title {
+  font-weight: bold;
+}
+
+/* plans */
+.info-plan {
+  text-align: start;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 25px;
+}
+.main-info-plan {
+  font-size: 25px !important;
+  font-weight: bold !important;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.main-info-plan-price {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding-top: 20px;
+  color: var(--main-color) !important;
+}
+.plans-cards:hover .main-info-plan-price,
+.text-info-plan:hover {
+  font-weight: bold !important;
+}
+
+.text-info-plan {
+  border-bottom: 1px solid #00000047;
+  padding-bottom: 10px;
+  transition: all 0.1s ease 0s;
+}
+.text-info-plan:last-child {
+  border-bottom: 0;
+}
+
+.false-feature {
+  color: red;
+  padding-left: 35%;
+}
+.true-feature {
+  color: rgb(0, 100, 0);
+  padding-left: 35%;
+}
+
+/* team */
+.swiper-cards-box {
+  background-color: #f3f3f5 !important;
+}
+.team-img {
+  height: 200px;
+  border-radius: 25%;
+}
+
+.social-team-icon {
+  transition: all 0.3s ease 0s;
+}
+.social-team-icon:hover {
+  transform: scale(1.53);
+  color: var(--main-color);
+}
+
+/* stats */
+.stats-cards {
+  border-radius: 30px !important ;
+  border: 1px solid rgba(0, 0, 0, 0.463) !important;
+}
+.stats-cards:hover {
+  transform: scale(1.13);
+  border: 3px solid var(--main-color) !important;
+}
+.icon-stats {
+  height: 45px;
+}
+.number-stats {
+  font-size: 30px !important;
+}
+.title-stats {
+  color: var(--main-color) !important;
+}
+.stats-cards,
+.title-stats,
+.number-stats,
+.icon-stats {
+  transition: all 0.3s ease 0s;
+}
+.number-stats:hover,
+.icon-stats:hover {
+  color: var(--main-color);
+}
+.stats-cards:hover .number-stats,
+.stats-cards:hover .title-stats {
+  font-weight: bold !important;
+}
+
+/* why us */
+.whyus-cards:hover .name-whyus {
+  font-weight: bold !important;
+}
+
+.box-img {
+  overflow: hidden;
+}
+.whyus-img {
+  height: 200px;
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+.whyus-img:hover {
+  transform: scale(1.5);
+}
+.name-whyus {
+  color: var(--main-color) !important;
+}
+.whyus-info {
+  line-height: 1.9 !important;
+}
+
+/* contact us */
+.contactus {
+  background-color: #031420;
+  color: #dededf;
+}
+
+/* about us */
+.contactus .about-us h3,
+.contactus .links-us h3,
+.contactus .contact-us h3 {
+  text-align: center;
+}
+.contactus .about-us p {
+  line-height: 1.6;
+}
+.contactus .social-contact {
+  padding-top: 5px;
+}
+.contactus .social-contact .youtube-icon:hover {
+  color: red;
+}
+.contactus .social-contact .facebook-icon:hover {
+  color: rgb(0, 94, 255);
+}
+.contactus .social-contact .linked-icon:hover {
+  color: rgba(0, 0, 255);
+}
+.contactus .social-contact .insta-icon:hover {
+  color: rgb(255, 0, 76);
+}
+.contactus .social-contact .whatsapp-icon:hover {
+  color: rgb(0, 170, 0);
+}
+.contactus .social-contact .insta-icon,
+.contactus .social-contact .linked-icon,
+.contactus .social-contact .facebook-icon,
+.contactus .social-contact .youtube-icon,
+.contactus .social-contact .whatsapp-icon {
+  width: 25px !important;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+
+.contactus .social-contact .insta-icon:hover,
+.contactus .social-contact .linked-icon:hover,
+.contactus .social-contact .facebook-icon:hover,
+.contactus .social-contact .youtube-icon:hover,
+.contactus .social-contact .whatsapp-icon:hover {
+  transform: scale(2);
+}
+
+/* links */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 15px;
+}
+ul li a {
+  text-decoration: none;
+
+  color: #dededf;
+  transform: scale(1);
+  transition: all 0.1s ease 0s;
+}
+
+ul li:hover a {
+  font-weight: bold;
+  transform: scale(1.4);
+}
+ul li:hover {
+  background-color: #0e3e60;
+}
+/* contact */
+.add-contact {
+  height: 20px;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+}
+.add-contact:hover {
+  transform: scale(1.4);
+}
+/* footer */
+.footer {
+  border-top: 1px solid #dededf9e;
+}
+.footer span {
+  color: #105d94;
+  font-weight: bold;
+}
