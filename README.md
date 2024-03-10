@@ -1,4 +1,4 @@
-# SSzonoe task1 landing page 
+# landing page 
 ### Responsive Website Using HTML, CSS, Bootstrap, and ReactJs.
 
 ## [landing page](https://task1-sszone.netlify.app)
