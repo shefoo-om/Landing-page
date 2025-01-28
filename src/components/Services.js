@@ -3,14 +3,14 @@ import "../all.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 // the images
-import frontendImage from "../imgs/service/frontend.jpg";
-import backendImage from "../imgs/service/backend.jpg";
-import uxuiImage from "../imgs/service/uxui.jpg";
-import fullstackImage from "../imgs/service/fullstack.png";
-import mobileImage from "../imgs/service/mobile-app.jpg";
-import flutterImage from "../imgs/service/flutter.jpg";
-import CSImage from "../imgs/service/CS50.jpg";
-import AIImage from "../imgs/service/AI.jpeg";
+import frontendImage from "../imgs/service/frontend.webp";
+import backendImage from "../imgs/service/backend.webp";
+import uxuiImage from "../imgs/service/uxui.webp";
+import fullstackImage from "../imgs/service/fullstack.webp";
+import mobileImage from "../imgs/service/mobile-app.webp";
+import flutterImage from "../imgs/service/flutter.webp";
+import CSImage from "../imgs/service/CS50.webp";
+import AIImage from "../imgs/service/AI.webp";
 
 function Services() {
     const service = [
@@ -33,7 +33,7 @@ function Services() {
                     {service.map((service) => (
                         <div className="col-xl-3 col-lg-4 col-sm-6  mb-3 d-flex justify-content-center align-items-center " key={service.id}>
                             <Card className="service-cards" style={{ width: '18rem' }} >
-                                <Card.Img className="service-img" variant="top" src={service.img} />
+                                <Card.Img alt='image of service' className="service-img" variant="top" src={service.img} fetchpriority="high" loading="eager" />
                                 <Card.Body>
                                     <Card.Title className=" mt-3 service-title">{service.name}</Card.Title>
                                     <Card.Text className=" pb-3">

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
-import img1 from "../imgs/whus/360_F_608825085_MuQopoWCJQJ8BUa4u2z1DECXtkuoVLmj.jpg"
-import img2 from "../imgs/whus/depositphotos_52756155-stock-photo-experience.jpg"
-import img3 from "../imgs/whus/istockphoto-1366428092-612x612.jpg"
+import img1 from "../imgs/whus/360_F_608825085_MuQopoWCJQJ8BUa4u2z1DECXtkuoVLmj.webp"
+import img2 from "../imgs/whus/depositphotos_52756155-stock-photo-experience.webp"
+import img3 from "../imgs/whus/istockphoto-1366428092-612x612.webp"
 import img4 from "../imgs/whus/store-of-value.webp"
 function Whyus() {
     const whyus = [
@@ -22,7 +22,7 @@ function Whyus() {
                         <div className="col-xl-3 col-lg-4 col-sm-6 mt-5 mb-5  d-flex justify-content-center align-items-center" key={whyus.id}>
                             <Card className="whyus-cards" style={{ width: '22rem' }} >
                                 <div className="box-img">
-                                    <Card.Img className="whyus-img" variant="top" src={whyus.img} />
+                                    <Card.Img className="whyus-img" variant="top" src={whyus.img} alt={whyus.title}  fetchpriority="high" loading="eager"/>
                                 </div>
                                 <Card.Body>
                                     <Card.Title className=" p-3 name-whyus fs-3">{whyus.title}</Card.Title>

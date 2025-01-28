@@ -8,12 +8,12 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, A11y } from 'swiper/modules';
 
 
-import img1 from '../imgs/team/0__T0FygatigPMHqMg.jpg'
-import img2 from '../imgs/team/export-advice.png'
-import img3 from '../imgs/team/images.jpeg'
-import img4 from '../imgs/team/main-qimg-e91db72441235b5a2cd3ffb5b1c2b241-pjlq.jpeg'
-import img5 from '../imgs/team/tes_dta_blog_image_7-4-800x412.jpg'
-import img6 from '../imgs/team/web_developer.jpeg'
+import img1 from '../imgs/team/0__T0FygatigPMHqMg.webp'
+import img2 from '../imgs/team/export-advice.webp'
+import img3 from '../imgs/team/images.webp'
+import img4 from '../imgs/team/main-qimg-e91db72441235b5a2cd3ffb5b1c2b241-pjlq.webp'
+import img5 from '../imgs/team/tes_dta_blog_image_7-4-800x412.webp'
+import img6 from '../imgs/team/web_developer.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -69,7 +69,7 @@ function Team() {
                             <SwiperSlide key={teamMember.id} >
                                 <div className="col-lg-12 col-sm-12 p-3 mt-3 mb-3 d-flex justify-content-center align-items-center ">
                                     <Card className="team-cards" style={{ width: '22rem' }}>
-                                        <Card.Img className="team-img" variant="top" src={teamMember.img} />
+                                        <Card.Img className="team-img" variant="top" src={teamMember.img} alt={teamMember.name} fetchpriority="high" loading="eager" />
                                         <Card.Body>
                                             <Card.Title className="fw-bold text-center mt-3 mb-3">{teamMember.name}</Card.Title>
                                             <Card.Subtitle className="mb-2 text-muted">{teamMember.jobTitle}</Card.Subtitle>

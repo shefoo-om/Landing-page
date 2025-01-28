@@ -1,18 +1,18 @@
 import React from 'react';
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
-import logo from '../imgs/logos/go_language-brandlogo.net.png'
+import logo from '../imgs/logos/go_language-brandlogo.net.webp'
 import '../all.css'
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className=" navbar sticky-top" >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt='' style={{ maxHeight: '70px', margin: '-10px' }} />
+          <img rel='preload' src={logo} alt="logo of website" style={{ maxHeight: '70px', margin: '-10px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav navbar-toggler" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto fw-bold">
-            <Nav.Link className=" nav-link" href="#home">Home</Nav.Link>
+            <Nav.Link className="nav-link" href="#home">Home</Nav.Link>
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#plans">Plans</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">

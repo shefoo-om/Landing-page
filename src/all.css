@@ -59,11 +59,18 @@ body {
 
 /* HOmePage */
 .HomePage {
-  background-position: center;
-  height: calc(100vh - 60px);
-  background-image: url("./imgs/pexels-instawalli-176851.jpg");
-  background-size: cover;
   position: relative;
+  height: calc(100vh - 60px);
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* z-index: -1; */
 }
 .HomePage .overlay {
   position: absolute;
@@ -293,7 +300,6 @@ ul li {
 }
 ul li a {
   text-decoration: none;
-
   color: #dededf;
   transform: scale(1);
   transition: all 0.1s ease 0s;
