@@ -39,7 +39,7 @@ function HomePage() {
                 <p className="mt-3 fs-4 description" >The best Academy to learn progamming</p>
               </div>
               <div className=" mt-4 mb-5 ">
-                <Link to="services" alt="hehee" smooth={true} duration={10}>
+                <Link to="services" alt="hehee" href="" smooth={true} duration={10}>
                   <button type="button" className="btn btn-outline-primary fs-4 fw-md-bold w-auto" onClick={handleButtonClick}>Explore Our Services</button>
                 </Link>
               </div>
