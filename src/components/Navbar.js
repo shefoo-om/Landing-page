@@ -7,7 +7,7 @@ function NavBar() {
     <Navbar collapseOnSelect expand="lg" className=" navbar sticky-top" >
       <Container>
         <Navbar.Brand href="#home">
-          <img rel='preload' src={logo} alt="logo of website" style={{ maxHeight: '70px', margin: '-10px' }} />
+          <img rel='preload' src={logo} alt="logo of website" style={{ width: "70px", height: "70px", maxHeight: '70px', margin: '-10px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav navbar-toggler" />
         <Navbar.Collapse id="responsive-navbar-nav">
