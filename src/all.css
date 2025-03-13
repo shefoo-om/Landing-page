@@ -38,15 +38,16 @@ body {
   border-color: transparent;
   box-shadow: rgb(212, 212, 212) 28px 28px 45px,
     rgb(255, 255, 255) -28px -28px 45px;
-  /* transition: all 0.3s ease 0s; */
+  transition: all 0.3s ease 0s;
 }
-/* .service-cards:hover, */
+.service-cards:hover,
 .plans-cards:hover,
-.team-cards:hover,
 .whyus-cards:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
-
+.team-cards:hover{
+  transform: scale(1.04);
+}
 /* navbar */
 .navbar-toggler:focus {
   outline: none !important;
@@ -170,10 +171,10 @@ body {
 }
 
 .social-team-icon {
-  transition: all 0.3s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 .social-team-icon:hover {
-  transform: scale(1.53);
+  transform: scale(1.3);
   color: var(--main-color);
 }
 
@@ -183,7 +184,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.463) !important;
 }
 .stats-cards:hover {
-  transform: scale(1.13);
+  transform: scale(1.07);
   border: 3px solid var(--main-color) !important;
 }
 .icon-stats {
@@ -211,9 +212,9 @@ body {
 }
 
 /* why us */
-.whyus-cards:hover .name-whyus {
+/* .whyus-cards:hover .name-whyus {
   font-weight: bold !important;
-}
+} */
 
 .box-img {
   overflow: hidden;
@@ -222,7 +223,7 @@ body {
   height: 200px;
   width: 100%;
   transform: scale(1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.9s ease 0s;
 }
 .whyus-img:hover {
   transform: scale(1.5);
@@ -366,6 +367,25 @@ ul li:hover {
   70% {
     opacity: 0.5;
     transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn-animated {
+  animation: btnWhite 0.5s ease-in-out 0.75s;
+  animation-fill-mode: backwards; /*this for the element be zero before start the animation*/
+}
+@keyframes btnWhite {
+  0% {
+    opacity: 0;
+    transform: translatey(100px); /* also we can use rotate for animation */
+  }
+
+  70% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

@@ -29,9 +29,9 @@ function HomePage() {
               <h3 className="welcome-text To-Right-title">Welcome To  <br /> <span className="title">GO</span><br /> Academy</h3>
               <p className="mt-3 fs-4 description To-Left-title" >The best Academy to learn progamming</p>
             </div>
-            <div className=" mt-4 mb-5 ">
+            <div className="btn-animated mt-4 mb-5 ">
               <Link to="services" alt="hehee" href="" smooth={true} duration={10}>
-                <button type="button" className="btn btn-outline-primary fs-4 fw-md-bold w-auto" onClick={handleButtonClick}>Explore Our Services</button>
+                <button type="button" className="btn  btn-outline-primary fs-4 fw-md-bold w-auto" onClick={handleButtonClick}>Explore Our Services</button>
               </Link>
             </div>
           </div>
