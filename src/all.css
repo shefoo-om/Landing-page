@@ -16,13 +16,15 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: #0d6efd;
-  text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.9s ease 0s;
   text-align: center;
+  width: max-content;
+  margin: auto;
 }
 .The-title h2:hover {
-  transform: scale(1.13);
+  transform: scale(1.1);
 }
 
 /* cards */
@@ -36,9 +38,9 @@ body {
   border-color: transparent;
   box-shadow: rgb(212, 212, 212) 28px 28px 45px,
     rgb(255, 255, 255) -28px -28px 45px;
-  transition: all 0.3s ease 0s;
+  /* transition: all 0.3s ease 0s; */
 }
-.service-cards:hover,
+/* .service-cards:hover, */
 .plans-cards:hover,
 .team-cards:hover,
 .whyus-cards:hover {
@@ -117,10 +119,6 @@ body {
 .service-title {
   transition: all 0.3s ease 0s;
 }
-.service-cards:hover .service-title {
-  font-weight: bold;
-}
-
 /* plans */
 .info-plan {
   text-align: start;
@@ -328,4 +326,49 @@ ul li:hover {
 .footer span {
   color: #105d94;
   font-weight: bold;
+}
+
+
+/*  */
+.primary-header {
+  backface-visibility: hidden;
+}
+
+.To-Right-title {
+  animation-name: mainTitle;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.To-Left-title {
+  animation: secondaryTitle 1s ease-out;
+}
+@keyframes mainTitle {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); /* also we can use rotate for animation */
+  }
+
+  70% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes secondaryTitle {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  70% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

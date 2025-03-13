@@ -2,6 +2,7 @@ import React from 'react';
 import "../all.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { motion } from 'framer-motion';
 // the images
 import frontendImage from "../imgs/service/frontend.webp";
 import backendImage from "../imgs/service/backend.webp";
@@ -31,22 +32,31 @@ function Services() {
                 </div>
                 <div className="row mt-5">
                     {service.map((service) => (
-                        <div className="col-xl-3 col-lg-4 col-sm-6  mb-3 d-flex justify-content-center align-items-center " key={service.id}>
-                            <Card className="service-cards" style={{ width: '18rem' }} >
-                                <Card.Img alt='image of service' className="service-img" variant="top" src={service.img} fetchpriority="high" loading="eager" />
-                                <Card.Body>
-                                    <Card.Title className=" mt-3 service-title">{service.name}</Card.Title>
-                                    <Card.Text className=" pb-3">
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
-                                    </Card.Text>
-                                    <Button className="mb-3 fw-bold" variant="primary">More Info</Button>
-                                </Card.Body>
-                            </Card>
+                        <div className="col-xl-3 col-lg-4 col-sm-6 mb-3 d-flex justify-content-center align-items-center" key={service.id}>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1.25, ease: "easeOut" }}
+                                whileHover={{ scale: 1.07, y: -10 }}
+                            >
+                                <Card className="service-cards" style={{ width: '18rem' }}>
+                                    <Card.Img alt='image of service' className="service-img" variant="top" src={service.img} fetchpriority="high" loading="eager" />
+                                    <Card.Body>
+                                        <Card.Title className="mt-3 service-title">{service.name}</Card.Title>
+                                        <Card.Text className="pb-3">
+                                            Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.
+                                        </Card.Text>
+                                        <motion.div whileHover="hover">
+                                            <Button className="mb-3 fw-bold" variant="primary">More Info</Button>
+                                        </motion.div>
+                                    </Card.Body>
+                                </Card>
+                            </motion.div>
                         </div>
                     ))}
                 </div>
-
             </div>
         </div>
     )
